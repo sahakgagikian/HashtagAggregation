@@ -30,10 +30,11 @@ span.onclick = function() {
 
 
 var note = document.getElementById("note");
-var leaveNote = document.getElementById("leave-note");
+var leaveNote = document.getElementById("leavenote");
 var submit = document.getElementById("submit");
 
 leaveNote.onclick = function() {
+  console.log('LALALALILALALA', note)
   note.style.display = "block";
 }
 
