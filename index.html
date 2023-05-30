@@ -8,7 +8,7 @@
   <title>Hashtag Aggregation</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -20,16 +20,14 @@
         <div class="animated-icon"><span></span><span></span><span></span></div>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <form class="form-inline my-2 my-lg-0">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a id="about" class="nav-link" href="#modal">About</a>
-            </li>
-            <li class="nav-item">
-              <a id="leave-note" class="nav-link" href="#note">Leave a note</a>
-            </li>
-          </ul>
-        </form>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a id="about" class="nav-link" href="#modal">About</a>
+          </li>
+          <li class="nav-item">
+            <a id="leavenote" class="nav-link" href="#note">Leave a note</a>
+          </li>
+        </ul>
       </div>
     </nav>
     <a class="nav-link" href=""><img src="img/logo.jpg" alt="vok" class="logo"></a>
@@ -58,16 +56,15 @@
         quisquam eaque alias.</p>
     </div>
   </div>
-  </div>
 
   <div id="note" class="note">
     <div class="note-content">
-      MOJOJ
       <form action="/action_page.php">
         <textarea name="" id="" cols="30" rows="10"></textarea>
         <input type="text" id="lname" name="lname" value="Doe"><br><br>
         <input id="submit" type="submit" value="Submit">
-      </form> 
+      </form>
+    </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

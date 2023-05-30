@@ -99,7 +99,17 @@
 
 @media screen and (max-width: 991px) {
     .header {
+        display: flex;
         justify-content: space-between;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .navbar-collapse {
+        position: relative;
+        width: 100%;
     }
 }
 
