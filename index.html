@@ -8,44 +8,68 @@
   <title>Hashtag Aggregation</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <form class="form-inline my-2 my-lg-0">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a id="about" class="nav-link" href="#modal">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Leave a note</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><img src="img/logo.jpg" alt="vok" class="logo"></a>
-          </li>
-        </ul>
-      </form>
-    </div>
-  </nav>
+  <div class="header">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="animated-icon"><span></span><span></span><span></span></div>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="form-inline my-2 my-lg-0">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a id="about" class="nav-link" href="#modal">About</a>
+            </li>
+            <li class="nav-item">
+              <a id="leave-note" class="nav-link" href="#note">Leave a note</a>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </nav>
+    <a class="nav-link" href=""><img src="img/logo.jpg" alt="vok" class="logo"></a>
+  </div>
 
   <div class="container posts-feed">
-    
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, placeat quasi laudantium autem nostrum quod
+      nemo dolores nisi odio doloribus dolorem quam blanditiis architecto ut, at accusantium aperiam minus beatae!
+      Voluptates, commodi at voluptatem fuga possimus repellat natus architecto tenetur vitae porro laboriosam
+      distinctio dolorum quas ipsum itaque saepe atque eaque nostrum quibusdam incidunt iste temporibus similique. Id,
+      deleniti eligendi?
+      Necessitatibus, mollitia. Molestiae optio quo possimus! Dicta dolorum ducimus fugit exercitationem asperiores
+      quaerat aperiam in numquam totam, natus quasi vitae ea cum odit animi placeat, enim vero labore libero error.
+      Ea dolorem possimus, veniam labore corporis temporibus, at voluptas sit aut quis aliquid commodi consequuntur sunt
+      culpa qui a magni ut, error dicta expedita nihil. Blanditiis officiis molestiae vero dicta?
+      Saepe dolorem, error aspernatur dignissimos quos expedita illum. Autem doloribus molestias sunt, libero in odio
+      recusandae voluptates. Asperiores maxime labore commodi facilis assumenda, nobis, autem fugiat culpa, sapiente
+      voluptates recusandae.</span>
   </div>
 
   <div id="modal" class="modal">
-    <span class="close">CLOSE</span> <!-- Close button -->
+    <span id="close" class="close">CLOSE</span>
     <div class="modal-content">
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas nemo animi maiores doloremque explicabo dolor? Eligendi cumque natus repudiandae odit placeat atque laborum, ipsam, optio praesentium, provident quisquam eaque alias.</p>
-      <!-- Modal content goes here -->
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas nemo animi maiores doloremque explicabo
+        dolor? Eligendi cumque natus repudiandae odit placeat atque laborum, ipsam, optio praesentium, provident
+        quisquam eaque alias.</p>
     </div>
   </div>
-  
+  </div>
+
+  <div id="note" class="note">
+    <div class="note-content">
+      MOJOJ
+      <form action="/action_page.php">
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input id="submit" type="submit" value="Submit">
+      </form> 
+  </div>
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -55,6 +79,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
