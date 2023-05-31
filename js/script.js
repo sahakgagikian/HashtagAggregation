@@ -20,32 +20,30 @@ var modal = document.getElementById("modal");
 var about = document.getElementById("about");
 var span = document.getElementsByClassName("close")[0];
 
-about.onclick = function() {
+about.onclick = function () {
   modal.style.display = "block";
-}
+};
 
-span.onclick = function() {
+span.onclick = function () {
   modal.style.display = "none";
-}
-
+};
 
 var note = document.getElementById("note");
 var leaveNote = document.getElementById("leavenote");
 var submit = document.getElementById("submit");
 
-leaveNote.onclick = function() {
-  console.log('LALALALILALALA', note)
+leaveNote.onclick = function () {
   note.style.display = "block";
+};
+
+if (submit) {
+  submit.onclick = function () {
+    note.style.display = "none";
+  };
 }
 
-submit.onclick = function() {
-  note.style.display = "none";
-}
-
-
-
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-}
+};

@@ -48,46 +48,46 @@
     -moz-transform-origin: left center;
     -o-transform-origin: left center;
     transform-origin: left center;
-  }
-  
-  .animated-icon span:nth-child(2) {
+}
+
+.animated-icon span:nth-child(2) {
     top: 10px;
     -webkit-transform-origin: left center;
     -moz-transform-origin: left center;
     -o-transform-origin: left center;
     transform-origin: left center;
-  }
-  
-  .animated-icon span:nth-child(3) {
+}
+
+.animated-icon span:nth-child(3) {
     top: 20px;
     -webkit-transform-origin: left center;
     -moz-transform-origin: left center;
     -o-transform-origin: left center;
     transform-origin: left center;
-  }
-  
-  .animated-icon.open span:nth-child(1) {
+}
+
+.animated-icon.open span:nth-child(1) {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
     top: 0px;
     left: 8px;
-  }
-  
-  .animated-icon.open span:nth-child(2) {
+}
+
+.animated-icon.open span:nth-child(2) {
     width: 0%;
     opacity: 0;
-  }
-  
-  .animated-icon.open span:nth-child(3) {
+}
+
+.animated-icon.open span:nth-child(3) {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
     top: 21px;
     left: 8px;
-  }
+}
 
 #hamburger {
     color: #5201cf;
@@ -176,19 +176,27 @@
 
 #note {
     position: fixed;
-    top: 50%;
-    left: 25%;
+    top: 85%;
+    left: 50%;
     transform: translate(-50%, -50%);
     /* Adjust the position to center the modal */
     width: 40%;
     height: 100%;
     display: none;
-    opacity: 0;
     /* New styles */
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-    background-color: #fff;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 991px) {
+    #note {
+        width: 80%;
+        left: 50%;
+    }
 }
 
 .note-content {
@@ -206,4 +214,30 @@
     justify-content: flex-end;
     opacity: 1;
     /* Fade in */
+}
+
+.note-content {
+    background-color: #a2cf87;
+}
+
+.note-content textarea,
+.note-content input,
+.submit {
+    background-color: #d9d9d9;
+    border: 1px solid #d9d9d9
+}
+
+.lower-block {
+    display: flex;
+    align-items: center;
+}
+
+.enter-name {
+    flex-grow: 1;
+    padding-right: 15px;
+    margin: 0;
+}
+
+.form-control {
+    height: 100%;
 }
